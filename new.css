@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url("https://wallpapers.com/images/hd/flower-garden-pictures-n2ewplpx8l28n39e.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    top: 30%;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ff2e63;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #ddd;
+}
+
+.login-link {
+    display: inline-block;
+    padding: 10px 25px;
+    background: rgba(255, 46, 99, 0.8);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #ff2e63;
+}
+
+.login-link:hover {
+    background: rgba(224, 33, 85, 0.9);
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ff2e63, 0 0 40px #ff2e63;
+}
+
+.flowers {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: auto;
+    overflow: hidden;
+}
+
+.flowers span {
+    position: absolute;
+    top: -50px;
+    font-size: 30px;
+    animation: fall linear infinite;
+    opacity: 0.9;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.flowers span:hover {
+    transform: scale(1.5) rotate(720deg);
+}
+
+.flowers span:nth-child(1) {
+    left: 5%;
+    animation-duration: 8s;
+}
+
+.flowers span:nth-child(2) {
+    left: 12%;
+    animation-duration: 10s;
+}
+
+.flowers span:nth-child(3) {
+    left: 20%;
+    animation-duration: 12s;
+}
+
+.flowers span:nth-child(4) {
+    left: 30%;
+    animation-duration: 9s;
+}
+
+.flowers span:nth-child(5) {
+    left: 40%;
+    animation-duration: 11s;
+}
+
+.flowers span:nth-child(6) {
+    left: 50%;
+    animation-duration: 13s;
+}
+
+.flowers span:nth-child(7) {
+    left: 60%;
+    animation-duration: 15s;
+}
+
+.flowers span:nth-child(8) {
+    left: 70%;
+    animation-duration: 10s;
+}
+
+.flowers span:nth-child(9) {
+    left: 80%;
+    animation-duration: 12s;
+}
+
+.flowers span:nth-child(10) {
+    left: 90%;
+    animation-duration: 14s;
+}
+
+.flowers span:nth-child(11) {
+    left: 25%;
+    animation-duration: 16s;
+}
+
+.flowers span:nth-child(12) {
+    left: 35%;
+    animation-duration: 18s;
+}
+
+.flowers span:nth-child(13) {
+    left: 55%;
+    animation-duration: 12s;
+}
+
+.flowers span:nth-child(14) {
+    left: 65%;
+    animation-duration: 20s;
+}
+
+.flowers span:nth-child(15) {
+    left: 85%;
+    animation-duration: 22s;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-50px) rotate(0deg);
+        opacity: 0.9;
+    }
+    100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
